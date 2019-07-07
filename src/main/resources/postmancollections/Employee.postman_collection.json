@@ -1,0 +1,102 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Employee",
+		"_postman_id": "42687bde-30cc-2989-b763-f3af973c2e76",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/api/v1/employees",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"emailId\": \"sandrapati.anilkumar@gmail.com\",\r\n  \"firstName\": \"Anilkumar\",\r\n  \"lastName\": \"Sandrapati\"\r\n}"
+				},
+				"description": "Create employee"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/employee/1",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employee/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "find employee by id"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/employees",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employees",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "list of employees retrives"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/employee/2",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employee/2",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"id\":1,\r\n  \"emailId\": \"lavanteja@gmail.com\",\r\n  \"firstName\": \"Teja\",\r\n  \"lastName\": \"Gujulla\"\r\n}"
+				},
+				"description": "update employee"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/api/v1/employee/1",
+			"request": {
+				"url": "http://localhost:8080/api/v1/employee/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "delete employee"
+			},
+			"response": []
+		}
+	]
+}
